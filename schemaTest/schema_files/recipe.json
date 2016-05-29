@@ -1,0 +1,255 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/alternateName",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/alternateName/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/url",
+      "type": "string"
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/author/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "comment": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0/author",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/comment/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "commentCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/commentCount",
+      "type": "integer"
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/datePublished",
+      "type": "string"
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/keywords/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "review": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/description",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/url",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/author",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/datePublished",
+            "type": "string"
+          },
+          "reviewRating": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/reviewRating",
+            "type": "object",
+            "properties": {
+              "ratingValue": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/reviewRating/ratingValue",
+                "type": "number"
+              }
+            }
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/upvoteCount",
+            "type": "integer"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/review/0/downvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "reviewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/reviewCount",
+      "type": "integer"
+    },
+    "recipeIngredient": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/recipeIngredient",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/recipeIngredient/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recipeInstructions": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/recipeInstructions",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/recipeInstructions/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Recipe/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "alternateName",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "comment",
+    "keywords",
+    "review",
+    "recipeIngredient",
+    "recipeInstructions",
+    "attributes"
+  ]
+}

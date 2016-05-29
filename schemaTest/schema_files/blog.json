@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/url",
+      "type": "string"
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/description",
+            "type": "string"
+          },
+          "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/image",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/image/0",
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/url",
+            "type": "string"
+          },
+          "address": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/address",
+            "type": "string"
+          },
+          "birthDate": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/birthDate",
+            "type": "string"
+          },
+          "gender": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/author/0/gender",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "blogPost": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/description",
+            "type": "string"
+          },
+          "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/image",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/image/0",
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/url",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/blogPost/0/datePublished",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Blog/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "blogPost",
+    "attributes"
+  ]
+}

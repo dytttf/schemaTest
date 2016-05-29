@@ -1,0 +1,350 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/alternateName",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/alternateName/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/url",
+      "type": "string"
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0/description",
+            "type": "string"
+          },
+          "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0/image",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0/image/0",
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "comment": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0/author",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/comment/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "commentCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/commentCount",
+      "type": "integer"
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/datePublished",
+      "type": "string"
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/keywords/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "genre": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/genre",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/genre/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "inLanguage": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/inLanguage",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/inLanguage/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "publisher": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/publisher",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/publisher/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/publisher/0/description",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/publisher/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/publisher/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/description",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/url",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/author",
+            "type": "string"
+          },
+          "commentCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/commentCount",
+            "type": "integer"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/datePublished",
+            "type": "string"
+          },
+          "reviewRating": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/reviewRating",
+            "type": "object",
+            "properties": {
+              "ratingValue": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/reviewRating/ratingValue",
+                "type": "number"
+              }
+            }
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/review/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "reviewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/reviewCount",
+      "type": "integer"
+    },
+    "episode": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/description",
+            "type": "string"
+          },
+          "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/image",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/image/0",
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/url",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/datePublished",
+            "type": "string"
+          },
+          "episodeNumber": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/episode/0/episodeNumber",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "numberOfEpisodes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/numberOfEpisodes",
+      "type": "integer"
+    },
+    "region": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/region",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/region/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/VideoSeries/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "alternateName",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "comment",
+    "keywords",
+    "genre",
+    "inLanguage",
+    "publisher",
+    "review",
+    "episode",
+    "region",
+    "attributes"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/created",
+      "type": "string",
+      "minLength": 1
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/crawled",
+      "type": "string",
+      "minLength": 1
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/httpStatus",
+      "type": "string",
+      "minLength": 1
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/breadcrumb/0",
+        "type": "string"
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/alternateName",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/alternateName/0",
+        "type": "string"
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/description",
+      "type": "string",
+      "minLength": 1
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/image/0",
+        "type": "string"
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/url",
+      "type": "string",
+      "minLength": 1
+    },
+    "additionalName": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/additionalName",
+      "type": "string"
+    },
+    "singerId": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/singerId",
+      "type": "string"
+    },
+    "nationality": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/nationality",
+      "type": "string"
+    },
+    "birthDate": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/birthDate",
+      "type": "string"
+    },
+    "birthPlace": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/birthPlace",
+      "type": "string"
+    },
+    "jobTitle": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/jobTitle",
+      "type": "string"
+    },
+    "worksFor": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/worksFor",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/worksFor/0",
+        "type": "string"
+      }
+    },
+    "height": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/height",
+      "type": "string"
+    },
+    "weight": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/weight",
+      "type": "string"
+    },
+    "member": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/member",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/member/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "album": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "albumId": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album/0/albumId",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "track": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/track",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/track/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/track/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/track/0/url",
+            "type": "string"
+          },
+          "songId": {
+            "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/album/0/track/0/songId",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/2015/07/china-phoenix/scrape/verticals/MusicGroup.jsonld/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "alternateName",
+    "description",
+    "image",
+    "name",
+    "url",
+    "additionalName",
+    "favoriteCount",
+    "shareCount",
+    "viewCount",
+    "attributes"
+  ]
+}

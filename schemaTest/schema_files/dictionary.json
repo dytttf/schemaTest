@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/breadcrumb/0",
+        "type": "string"
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/alternateName",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/alternateName/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/description",
+      "type": "string",
+      "minLength": 1
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/image/0",
+        "type": "string"
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/url",
+      "type": "string",
+      "minLength": 1
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Dictionary/attributes",
+      "type": "array",
+      "items": []
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "alternateName",
+    "description",
+    "name",
+    "url",
+    "attributes"
+  ]
+}

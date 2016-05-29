@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/url",
+      "type": "string"
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/author/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/datePublished",
+      "type": "string"
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/keywords/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptedAnswer": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/author",
+            "type": "string"
+          },
+          "commentCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/commentCount",
+            "type": "integer"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/acceptedAnswer/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "answerCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/answerCount",
+      "type": "integer"
+    },
+    "downvoteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/downvoteCount",
+      "type": "integer"
+    },
+    "suggestedAnswer": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/author",
+            "type": "string"
+          },
+          "commentCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/commentCount",
+            "type": "integer"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/suggestedAnswer/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "upvoteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/upvoteCount",
+      "type": "integer"
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Question/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "keywords",
+    "acceptedAnswer",
+    "suggestedAnswer",
+    "attributes"
+  ]
+}

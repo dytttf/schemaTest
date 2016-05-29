@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/breadcrumb/0",
+        "type": "string"
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/alternateName",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/alternateName/0",
+        "type": "string"
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/description",
+      "type": "string",
+      "minLength": 1
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/name",
+      "type": "string"
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/url",
+      "type": "string",
+      "minLength": 1
+    },
+    "text": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/text",
+      "type": "string",
+      "minLength": 1
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/author/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/author/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dateModified": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/dateModified",
+      "type": "string",
+      "minLength": 1
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/datePublished",
+      "type": "string"
+    },
+    "inLanguage": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/inLanguage",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/inLanguage/0",
+        "type": "string"
+      }
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/keywords/0",
+        "type": "string"
+      }
+    },
+    "citation": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/citation",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/citation/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/citation/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/citation/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "relatedLink": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/relatedLink",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/relatedLink/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/relatedLink/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/relatedLink/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contents": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/contents",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/contents/0",
+        "type": "string"
+
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Encyclopedia/attributes",
+      "type": "array",
+      "items": []
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "alternateName",
+    "description",
+    "image",
+    "name",
+    "url",
+    "dateModified",
+    "inLanguage",
+    "favoriteCount",
+    "shareCount",
+    "viewCount",
+    "attributes"
+  ]
+}

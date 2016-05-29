@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://tripadvisor.com",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://tripadvisor.com/@context",
+      "type": "string"
+    },
+    "@id": {
+      "id": "http://tripadvisor.com/@id",
+      "type": "string"
+    },
+    "created": {
+      "id": "http://tripadvisor.com/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://tripadvisor.com/crawled",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://tripadvisor.com/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/breadcrumb/0",
+        "type": "string"
+      }
+    },
+    "httpStatus": {
+      "id": "http://tripadvisor.com/httpStatus",
+      "type": "string"
+    },
+    "androidAppURL": {
+      "id": "http://tripadvisor.com/androidAppURL",
+      "type": "string"
+    },
+    "name": {
+      "id": "http://tripadvisor.com/name",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://tripadvisor.com/image",
+      "type": "string"
+    },
+    "category": {
+      "id": "http://tripadvisor.com/category",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/category/0",
+        "type": "string"
+      }
+    },
+    "cuisines": {
+      "id": "http://tripadvisor.com/cuisines",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/cuisines/0",
+        "type": "string"
+      }
+    },
+    "concepts": {
+      "id": "http://tripadvisor.com/concepts",
+      "type": "array",
+      "items":
+        {
+          "id": "http://tripadvisor.com/concepts/0",
+          "type": "string"
+        }
+    },
+    "neighborhood": {
+      "id": "http://tripadvisor.com/neighborhood",
+      "type": "string"
+    },
+    "address": {
+      "id": "http://tripadvisor.com/address",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/address/0",
+        "type": "string"
+      }
+    },
+    "latitude": {
+      "id": "http://tripadvisor.com/latitude",
+      "type": "string"
+    },
+    "longitude": {
+      "id": "http://tripadvisor.com/longitude",
+      "type": "string"
+    },
+    "description": {
+      "id": "http://tripadvisor.com/description",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/description/0",
+        "type": "string"
+      }
+    },
+    "openHours": {
+      "id": "http://tripadvisor.com/openHours",
+      "type": "array",
+      "items":
+        {
+          "id": "http://tripadvisor.com/openHours/0",
+          "type": "string"
+        }
+    },
+    "price": {
+      "id": "http://tripadvisor.com/price",
+      "type": "string"
+    },
+    "phoneNumber": {
+      "id": "http://tripadvisor.com/phoneNumber",
+      "type": "string"
+    },
+    "avgRating": {
+      "id": "http://tripadvisor.com/avgRating",
+      "type": "string"
+    },
+    "ratingCount": {
+      "id": "http://tripadvisor.com/ratingCount",
+      "type": "string"
+    },
+    "userReviews": {
+      "id": "http://tripadvisor.com/userReviews",
+      "type": "array",
+      "items":
+        {
+          "id": "http://tripadvisor.com/userReviews/0",
+          "type": "string"
+        }
+    },
+    "expertReviews": {
+      "id": "http://tripadvisor.com/expertReviews",
+      "type": "array",
+      "items": {
+        "id": "http://tripadvisor.com/expertReviews/0",
+        "type": "string"
+      }
+    },
+    "attributes": {
+      "id": "http://tripadvisor.com/attributes",
+      "type": "array",
+      "items": 
+        {
+          "id": "http://tripadvisor.com/attributes/0",
+          "type": "string"
+        }
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "breadcrumb",
+    "httpStatus",
+    "androidAppURL",
+    "name",
+    "image",
+    "category",
+    "cuisines",
+    "concepts",
+    "neighborhood",
+    "address",
+    "latitude",
+    "longitude",
+    "description",
+    "openHours",
+    "price",
+    "phoneNumber",
+    "avgRating",
+    "ratingCount",
+    "userReviews",
+    "expertReviews",
+    "attributes"
+  ]
+}

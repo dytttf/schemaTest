@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/url",
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0/description",
+            "type": "string"
+          },
+          "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0/image",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0/image/0",
+              "type": "string"
+            }
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "comment": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0/author",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/comment/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "commentCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/commentCount",
+      "type": "integer"
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/datePublished",
+      "type": "string"
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/keywords/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Article/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "datePublished",
+    "keywords",
+    "attributes"
+  ]
+}

@@ -1,0 +1,210 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/@context",
+            "type": "string",
+            "minLength": 1
+        },
+        "@id": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/@id",
+            "type": "string",
+            "minLength": 1
+        },
+        "created": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/created",
+            "type": "string"
+        },
+        "crawled": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/crawled",
+            "type": "string"
+        },
+        "httpStatus": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/httpStatus",
+            "type": "string"
+        },
+        "breadcrumb": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/breadcrumb",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/breadcrumb/0",
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/description",
+            "type": "string"
+        },
+        "image": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/image",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/image/0",
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/name",
+            "type": "string",
+            "minLength": 1
+        },
+        "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/url",
+            "type": "string"
+        },
+        "address": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/address",
+            "type": "string"
+        },
+        "aggregateRating": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/aggregateRating",
+            "type": "object",
+            "properties": {
+                "ratingCount": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/aggregateRating/ratingCount",
+                    "type": "integer"
+                },
+                "ratingValue": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/aggregateRating/ratingValue",
+                    "type": "number"
+                }
+            }
+        },
+        "geo": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/geo",
+            "type": "object",
+            "properties": {
+                "latitude": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/geo/latitude",
+                    "type": "number"
+                },
+                "longitude": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/geo/longitude",
+                    "type": "number"
+                }
+            }
+        },
+        "telephone": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/telephone",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/telephone/0",
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "review": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0",
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/description",
+                        "type": "string"
+                    },
+                    "image": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/image",
+                        "type": "array",
+                        "items": {
+                            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/image/0",
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "name": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/name",
+                        "type": "string"
+                    },
+                    "url": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/url",
+                        "type": "string"
+                    },
+                    "author": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/author",
+                        "type": "string"
+                    },
+                    "commentCount": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/commentCount",
+                        "type": "integer"
+                    },
+                    "datePublished": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/datePublished",
+                        "type": "string"
+                    },
+                    "reviewRating": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/reviewRating",
+                        "type": "object",
+                        "properties": {
+                            "ratingValue": {
+                                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/reviewRating/ratingValue",
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "downvoteCount": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/downvoteCount",
+                        "type": "integer"
+                    },
+                    "upvoteCount": {
+                        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/review/0/upvoteCount",
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "reviewCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/reviewCount",
+            "type": "integer"
+        },
+        "priceRange": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/priceRange",
+            "type": "string"
+        },
+        "keywords": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/keywords",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/keywords/0",
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "zone": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/zone",
+            "type": "array",
+            "items": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/zone/0",
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "attributes": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Hotel/attributes",
+            "type": "array"
+        }
+    },
+    "required": [
+        "@context",
+        "@id",
+        "created",
+        "crawled",
+        "httpStatus",
+        "breadcrumb",
+        "description",
+        "image",
+        "name",
+        "url",
+        "aggregateRating",
+        "telephone",
+        "review",
+        "keywords",
+        "zone",
+        "attributes"
+    ]
+}

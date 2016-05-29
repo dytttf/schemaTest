@@ -1,0 +1,245 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/url",
+      "type": "string"
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "brand": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/brand",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/brand/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/brand/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/brand/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "model": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/model",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/model/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "offers": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0",
+        "type": "object",
+        "properties": {
+          "originalPrice": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/originalPrice",
+            "type": "string"
+          },
+          "price": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/price",
+            "type": "string"
+          },
+          "priceCurrency": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/priceCurrency",
+            "type": "string"
+          },
+          "seller": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller",
+            "type": "object",
+            "properties": {
+              "name": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/name",
+                "type": "string"
+              },
+              "url": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/url",
+                "type": "string"
+              },
+              "aggregateRating": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/aggregateRating",
+                "type": "object",
+                "properties": {
+                  "ratingCount": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/aggregateRating/ratingCount",
+                    "type": "integer"
+                  },
+                  "ratingValue": {
+                    "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/aggregateRating/ratingValue",
+                    "type": "number"
+                  }
+                }
+              },
+              "creditPoints": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/offers/0/seller/creditPoints",
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "review": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/description",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/url",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/author",
+            "type": "string"
+          },
+          "commentCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/commentCount",
+            "type": "integer"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/datePublished",
+            "type": "string"
+          },
+          "reviewRating": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/reviewRating",
+            "type": "object",
+            "properties": {
+              "ratingValue": {
+                "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/reviewRating/ratingValue",
+                "type": "number"
+              }
+            }
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/review/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "reviewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/reviewCount",
+      "type": "integer"
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/Product/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "description",
+    "image",
+    "name",
+    "url",
+    "brand",
+    "model",
+    "offers",
+    "review",
+    "attributes"
+  ]
+}

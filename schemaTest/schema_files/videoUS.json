@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://imdb.com",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://imdb.com/@context",
+      "type": "string"
+    },
+    "@id": {
+      "id": "http://imdb.com/@id",
+      "type": "string"
+    },
+    "created": {
+      "id": "http://imdb.com/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://imdb.com/crawled",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://imdb.com/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://imdb.com/breadcrumb/0",
+        "type": "string"
+      }
+    },
+    "httpStatus": {
+      "id": "http://imdb.com/httpStatus",
+      "type": "string"
+    },
+    "androidAppURL": {
+      "id": "http://imdb.com/androidAppURL",
+      "type": "string"
+    },
+    "name": {
+      "id": "http://imdb.com/name",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://imdb.com/image",
+      "type": "string"
+    },
+    "releaseDate": {
+      "id": "http://imdb.com/releaseDate",
+      "type": "string"
+    },
+    "mpaaRating": {
+      "id": "http://imdb.com/mpaaRating",
+      "type": "string"
+    },
+    "duration": {
+      "id": "http://imdb.com/duration",
+      "type": "string"
+    },
+    "genre": {
+      "id": "http://imdb.com/genre",
+      "type": "array",
+      "items":
+        {
+          "id": "http://imdb.com/genre/0",
+          "type": "string"
+        }
+    },
+    "avgRating": {
+      "id": "http://imdb.com/avgRating",
+      "type": "string"
+    },
+    "ratingCount": {
+      "id": "http://imdb.com/ratingCount",
+      "type": "string"
+    },
+    "concepts": {
+      "id": "http://imdb.com/concepts",
+      "type": "array",
+      "items": 
+        {
+          "id": "http://imdb.com/concepts/0",
+          "type": "string"
+        }
+    },
+    "description": {
+      "id": "http://imdb.com/description",
+      "type": "array",
+      "items":
+        {
+          "id": "http://imdb.com/description/0",
+          "type": "string"
+        }
+    },
+    "actors": {
+      "id": "http://imdb.com/actors",
+      "type": "array",
+      "items":
+        {
+          "id": "http://imdb.com/actors/0",
+          "type": "string"
+        }
+    },
+    "expertRating": {
+      "id": "http://imdb.com/expertRating",
+      "type": "string"
+    },
+    "userReviews": {
+      "id": "http://imdb.com/userReviews",
+      "type": "array",
+      "items":
+        {
+          "id": "http://imdb.com/userReviews/0",
+          "type": "string"
+        }
+    },
+    "minAge": {
+      "id": "http://imdb.com/minAge",
+      "type": "string"
+    },
+    "attributes": {
+      "id": "http://imdb.com/attributes",
+      "type": "array",
+      "items":
+        {
+          "id": "http://imdb.com/attributes/0",
+          "type": "string"
+        }
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "breadcrumb",
+    "httpStatus",
+    "androidAppURL",
+    "name",
+    "image",
+    "releaseDate",
+    "mpaaRating",
+    "duration",
+    "genre",
+    "avgRating",
+    "ratingCount",
+    "concepts",
+    "description",
+    "actors",
+    "expertRating",
+    "userReviews",
+    "minAge",
+    "attributes"
+  ]
+}

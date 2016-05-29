@@ -1,0 +1,315 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/@context",
+      "type": "string",
+      "minLength": 1
+    },
+    "@id": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/@id",
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/created",
+      "type": "string"
+    },
+    "crawled": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/crawled",
+      "type": "string"
+    },
+    "httpStatus": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/httpStatus",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/breadcrumb",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/breadcrumb/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alternateName": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/alternateName",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/alternateName/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/description",
+      "type": "string"
+    },
+    "image": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/image",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/image/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "name": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/name",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/url",
+      "type": "string"
+    },
+    "aggregateRating": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/aggregateRating",
+      "type": "object",
+      "properties": {
+        "ratingCount": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/aggregateRating/ratingCount",
+          "type": "integer"
+        },
+        "ratingValue": {
+          "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/aggregateRating/ratingValue",
+          "type": "number"
+        }
+      }
+    },
+    "author": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/author",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/author/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/author/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/author/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "comment": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0/description",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0/author",
+            "type": "string"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/comment/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "commentCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/commentCount",
+      "type": "integer"
+    },
+    "datePublished": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/datePublished",
+      "type": "string"
+    },
+    "keywords": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/keywords",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/keywords/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "genre": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/genre",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/genre/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "inLanguage": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/inLanguage",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/inLanguage/0",
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "publisher": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/publisher",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/publisher/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/publisher/0/name",
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/publisher/0/url",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0",
+        "type": "object",
+        "properties": {
+          "description": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/description",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/url",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/author",
+            "type": "string"
+          },
+          "commentCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/commentCount",
+            "type": "integer"
+          },
+          "datePublished": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/datePublished",
+            "type": "string"
+          },
+          "downvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/downvoteCount",
+            "type": "integer"
+          },
+          "upvoteCount": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/review/0/upvoteCount",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "reviewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/reviewCount",
+      "type": "integer"
+    },
+    "numTracks": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/numTracks",
+      "type": "integer"
+    },
+    "track": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track",
+      "type": "array",
+      "items": {
+        "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/name",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/url",
+            "type": "string"
+          },
+          "author": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/author",
+            "type": "array",
+            "items": {
+              "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/author/0",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/author/0/name",
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/author/0/url",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "duration": {
+            "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/track/0/duration",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "favoriteCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/favoriteCount",
+      "type": "integer"
+    },
+    "shareCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/shareCount",
+      "type": "integer"
+    },
+    "viewCount": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/viewCount",
+      "type": "integer"
+    },
+    "attributes": {
+      "id": "http://schemas.quixey.com/china-phoenix/scrape/verticals/MusicAlbum/attributes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "created",
+    "crawled",
+    "httpStatus",
+    "breadcrumb",
+    "alternateName",
+    "description",
+    "image",
+    "name",
+    "url",
+    "author",
+    "comment",
+    "keywords",
+    "genre",
+    "inLanguage",
+    "publisher",
+    "review",
+    "track",
+    "attributes"
+  ]
+}
